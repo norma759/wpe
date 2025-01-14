@@ -1,1 +1,12 @@
+local textLabel = script.Parent
+textLabel.Visible = false
 
+function showMessage(message)
+    textLabel.Text = message
+    textLabel.Visible = true
+
+    wait(8)
+    textLabel.Visible = false
+end
+
+showMessage("Script Disable, Wait Update")
